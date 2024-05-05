@@ -2,6 +2,7 @@
   "name": "back",
   "version": "1.0.0",
   "description": "backend con nodejs y js",
+  "type": "module",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
