@@ -1,7 +1,8 @@
 import dotenv from 'dotenv'
 dotenv.config()
 import express from 'express'
-import connectDB from '../backend/server/database/connectDB.js'
+import connectDB from './server/database/connectDB.js'
+import router from './server/routes/app.js'
 
 const app = express()
 app.use(express.json())
@@ -18,8 +19,6 @@ const connect = async () => {
     }
  }
 
-app.get('/', (req, res) => {
-    res.send('Hola Mundo!')
-})
+ app.use('/', router)
 
 connect()
