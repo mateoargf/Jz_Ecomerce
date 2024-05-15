@@ -14,11 +14,13 @@ const connect = async () => {
     try {
         await connectDB(db)
         app.listen(port, console.log(`el servidor inició: ${port}`))
-    } catch(error){
+    } catch (error) {
         console.log(`error en el servidror: ${error}`)
     }
- }
-
- app.use('/', router)
+}
 
 connect()
+
+app.use('/', router)
+
+

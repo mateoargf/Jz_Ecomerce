@@ -1,10 +1,9 @@
 import express from 'express'
 const router = express.Router()
 import errRouter from './err.js'
+import { getIndexPage } from '../controllers/app.js'
 
-router.get('/', (req, res) => {
-    res.send('Hola Mundo!')
-})
+router.get('/', getIndexPage)
 
 router.use('/err', errRouter)
 
