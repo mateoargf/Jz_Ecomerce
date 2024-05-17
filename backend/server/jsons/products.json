@@ -1,0 +1,33 @@
+[
+     {
+       "name": "Snoopy",
+       "image": "https://example.com/images/laptop.jpg",
+       "price": 999.99,
+       "stock": 10
+     },
+     {
+       "name": "Mafalda",
+       "image": "https://example.com/images/smartphone.png",
+       "price": 499.99,
+       "stock": 50
+     },
+     {
+       "name": "Gaturro",
+       "image": "https://example.com/images/headphones.jpeg",
+       "price": 79.99,
+       "stock": 100
+     },
+     {
+       "name": "Silvestre",
+       "image": "https://example.com/images/smartwatch.gif",
+       "price": 199.99,
+       "stock": 25
+     },
+     {
+       "name": "Bugs Bunny",
+       "image": "https://example.com/images/tablet.jpg",
+       "price": 299.99,
+       "stock": 30
+     }
+   ]
+   
