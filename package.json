@@ -1,0 +1,12 @@
+{
+     "name": "ecomerce",
+     "version": "1.0.0",
+     "private": true,
+     "scripts": {
+          "start": "node backend/app.js",
+          "build": "cd frontend && npm install && npm run build"
+     },
+     "dependencies": {
+          "concurrently": "^6.5.1"
+     }
+}

@@ -3,6 +3,7 @@ dotenv.config()
 import express from 'express'
 import connectDB from './server/database/connectDB.js'
 import router from './server/routes/app.js'
+import path from 'path'
 
 const app = express()
 app.use(express.json())
@@ -20,6 +21,8 @@ const connect = async () => {
 }
 
 connect()
+
+app.use(express.static(path.join(__dirname,'..','frontend','build')))
 
 app.use('/', router)
 
